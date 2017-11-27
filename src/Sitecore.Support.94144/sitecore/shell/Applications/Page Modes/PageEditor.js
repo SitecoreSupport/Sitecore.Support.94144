@@ -541,7 +541,7 @@ Sitecore.PageModes.PageEditor = new function() {
     }
 
     //Ctrl+S
-    if (e.keyCode == 83 && e.ctrlKey) {
+    if (e.keyCode == 83 && e.ctrlKey && !e.altKey) {  
       e.preventDefault();            
       this.save();
       return;
